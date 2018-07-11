@@ -1,20 +1,18 @@
 '''
-Functionality to open URLs with Plover commands.
+Functionality to open URLs.
 '''
 
 import webbrowser
 
-from plover.engine import StenoEngine
 
-def open_url(engine: StenoEngine, url: str) -> None:
+def open_url(_, url: str) -> None:
     '''
-    Command to open a URL with Plover.
+    Command to open a URL.
 
-    :param engine: The active Plover engine that is executing the command.
-    :type engine: plover.engine.StenoEngine
+    :param _: The Plover engine that is executing the command.
+    :type _: plover.engine.StenoEngine
 
-    :param url: The URL to open.
-    :type url: str
+    :param url: The URL to open. May also be a folder or file path.
     '''
 
     webbrowser.open(url)

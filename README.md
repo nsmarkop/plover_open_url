@@ -1,22 +1,12 @@
 # Plover Open URL
 
-Command plugin for [Plover](https://github.com/openstenoproject/plover) to open a URL.
+Command plugin for [Plover](https://github.com/openstenoproject/plover) to open a URL, a folder, or files.
 
-## Installation
-
-Download the latest version of Plover for your operating system from the [releases page](https://github.com/openstenoproject/plover/releases). Only versions 4.0.0.dev6 and higher are supported.
-
-1. Open Plover
-2. Navigate to the Plugin Manager tool
-3. Select the "plover-open-url" plugin entry in the list
-4. Click install
-5. Restart Plover
-
-The same method can be used for updating and uninstalling the plugin.
+The package is available on [GitHub](https://github.com/nsmarkop/plover_open_url) and [PyPI](https://pypi.org/project/plover-open-url/).
 
 ## Usage
 
-In order to use this plugin you just need to create a dictionary entry of the form:
+In order to use this plugin in [Plover](https://github.com/openstenoproject/plover) you need to create a dictionary entry of the form:
 
 ``` json
 {
@@ -31,3 +21,15 @@ For example, if you wanted to open Google:
     "example_stroke": "{PLOVER:OPEN_URL:https://www.google.com}"
 }
 ```
+
+or if you wanted to open Program Files on Windows:
+
+``` json
+{
+    "example_stroke": "{PLOVER:OPEN_URL:C:\\Program Files}"
+}
+```
+
+## License
+
+The MIT License.
